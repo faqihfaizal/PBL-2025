@@ -105,10 +105,25 @@ h2 {
 }
 
 .grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  justify-content: center;
+
+  /* display: flex;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap
+  flex-wrap: wrap */
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+
+  /* display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap */
 }
 
 .item {
@@ -121,7 +136,7 @@ h2 {
   object-fit: cover;
   border-radius: 10px;
 }
-/* Promo Bar */
+
 .promo-bar {
   background: #f3f3f3;
   padding: 20px;
@@ -203,7 +218,6 @@ footer {
   text-decoration: underline;
 }
 
-/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   border-top: 1px solid #ddd;
